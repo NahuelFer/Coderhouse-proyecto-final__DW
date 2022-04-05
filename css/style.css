@@ -97,6 +97,10 @@ form input:focus{
     padding: 2rem;
 }
 
+.burger{
+    display: none;
+}
+
 /* HEADER END */
 
 /* FOOTER */
@@ -343,6 +347,7 @@ justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* CATEGORÍAS */
@@ -442,29 +447,82 @@ justify-self: center;
 }
 
 @media screen and (max-width: 425px) {
-    .sections {
-        height: 350px;
-        gap: 2rem
+
+    /* HEADER*/
+    /*La idea es que sea una barra lateral*/
+
+    .container__header{
+        width: 100%;
+        justify-content: space-between;
     }
+    .container__header nav{
+        margin: 0;
+        display: none;
+    }
+
+    .carrito{
+        display: none;
+    }
+
+    .burger{
+        display: inline;
+    }
+
+    /* HEADER */
+
+    /* INDEX */
+
 
     .main__one{
         margin-top: 1rem;
+        flex-direction: column;
+    
     }
 
     .main__one div h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .subtitulo__main-two{
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .subtitulo__main {
         display: flex;
         justify-content: start;
-        font-size: 2.3rem;
+        font-size: 3rem;
         max-inline-size: 20rem;
+        text-align: center;
     }
+
+
+    .sections {
+        height: 300px;
+        gap: .7rem;
+        margin-top: 3rem;
+    }
+
+    .sections__div{
+        gap: 2.5rem;
+    }
+
+    .sections__cards{
+        width: 110%;
+    }
+
+    /* INDEX */
 
     .parrafos{
         font-size: 1.5rem;
         max-inline-size: 20rem;
+    }
+
+    .parrafo__main{
+        font-size: 1.5rem;
+        max-inline-size: 20rem;
+        text-align: center;
     }
 
     .imageBox__main{
@@ -473,6 +531,8 @@ justify-self: center;
         display: flex;
         align-self: center;
         padding: .2rem;
+        margin-top: 2rem;
+        width: 35%;
     }
 
     .header__nav-item{
@@ -492,8 +552,19 @@ justify-self: center;
         font-size: 5rem;
     }
 
+    .subtitulo{
+        text-align: center;
+    }
+
     .cuerpo__nosotros{
         grid-template-columns: 1fr;
+    }
+
+    .nosotros__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .section__nosotrosOne{
@@ -519,5 +590,15 @@ justify-self: center;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         align-items: center;
+    }
+
+    .section__nosotrosOne p{
+        text-align:center
+    }
+    .section__nosotrosTwo p{
+        text-align:center
+    }
+    .section__nosotrosThird p{
+        text-align:center
     }
 }
