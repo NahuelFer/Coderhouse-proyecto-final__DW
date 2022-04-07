@@ -43,8 +43,13 @@ form input:focus{
 .imageBox{
     margin: 2rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    box-shadow: 0 3px 5px 3px #F29DEA;
     background-color: #f2b9b6;
+    transition: .5s;
+}
+
+.imageBox:hover{
+    box-shadow: 0 3px 5px 3px rgba(178, 58, 72, 0.733);
+    transform: scale(102%);
 }
 
 .titulo{
@@ -87,6 +92,14 @@ form input:focus{
 }
 
 
+.icono{
+    transition: 1s;
+}
+
+.icono:hover{
+    transform: scale(112.5%);
+}
+
 .header__nav{
     display: flex;
     justify-content: center;
@@ -95,6 +108,11 @@ form input:focus{
 
 .header__nav-item{
     padding: 2rem;
+    transition: .5s;
+}
+
+.header__nav-item:hover{
+    transform: scale(110%);
 }
 
 .burger{
@@ -123,6 +141,19 @@ form input:focus{
     padding-bottom: .7rem;
 }
 
+.item__footer{
+    transition: 1s;
+}
+
+.item__footer:hover{
+    transform: scale(112.5%);
+}
+
+.subtitulo__footer{
+    font-size: larger;
+    font-weight: 650;
+    margin-bottom: .5rem;
+}
 
 
 /* FOOTER END*/
@@ -154,19 +185,25 @@ form input:focus{
     margin-bottom: 2rem;
 }
 
+.parrafo__main{
+    font-size: 1.5rem;
+    max-inline-size: 45rem;
+}
+
 .imageBox__main{
     width: 25%;
     height: 60%;
     background-color: #f2b9b6;
     padding: .5rem;
     border-radius: 2.5rem;
-    transition: border cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: border cubic-bezier(0.55, 0.055, 0.675, 0.19) .01s;
     border: #f2b9b6 0.2em solid;
+    
 }
 
 .imageBox__main:hover{
     border: rgba(178, 58, 72, 0.733) solid;
-    
+    transform: scale(102%);
 }
 
 .separador{
@@ -180,7 +217,7 @@ form input:focus{
     font-size: 5rem;
     font-weight: 700;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 
 .sections{
@@ -210,19 +247,19 @@ form input:focus{
 
 .sections__cards{
     background-color: #F2B9B6;
-    box-shadow: 0 3px 5px 3px #F29DEA;
     padding: 1rem;
     text-align: center;
     font: 300;
     font-size: large;
     width: 30%;
     height: 80%;
-    transition: .4s;
+    transition: .3s;
     border-radius: .8rem;
 }
 
 .sections__cards:hover{
     transform: scale(110%);
+    box-shadow: 0 3px 5px 3px rgba(178, 58, 72, 0.733);
 }
 
 .sections__cards img{
@@ -402,6 +439,7 @@ justify-self: center;
         margin: 0;
         transform: scale(90%);
     }
+
     
 }
 
