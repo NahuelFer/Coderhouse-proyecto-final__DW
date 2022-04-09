@@ -440,6 +440,10 @@ justify-self: center;
         transform: scale(90%);
     }
 
+    .nosotros__texto{
+        margin-left: 1rem;
+    }
+
     
 }
 
@@ -481,6 +485,10 @@ justify-self: center;
     .subtitulo{
         font-size: 3rem;
     }
+
+    .nosotros__texto{
+        margin-left: 0.8rem;
+    }
     
 }
 
@@ -492,19 +500,17 @@ justify-self: center;
     .container__header{
         width: 100%;
         justify-content: space-between;
+
+        ;
     }
+
+ 
     .container__header nav{
         margin: 0;
-        display: none;
+        font-size: smaller;
     }
 
-    .carrito{
-        display: none;
-    }
 
-    .burger{
-        display: inline;
-    }
 
     /* HEADER */
 
@@ -544,6 +550,7 @@ justify-self: center;
 
     .sections__div{
         gap: 2.5rem;
+        margin: .5rem;
     }
 
     .sections__cards{
@@ -587,11 +594,16 @@ justify-self: center;
     }
 
     .titulo{
-        font-size: 5rem;
+        font-size: 3.6rem;
     }
 
     .subtitulo{
         text-align: center;
+        font-size: 2.8rem;
+    }
+
+    .subtitulo__main-two{
+        font-size: 2.2rem;
     }
 
     .cuerpo__nosotros{
@@ -601,8 +613,8 @@ justify-self: center;
     .nosotros__texto{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-self: center;
     }
 
     .section__nosotrosOne{
@@ -638,5 +650,29 @@ justify-self: center;
     }
     .section__nosotrosThird p{
         text-align:center
+    }
+
+    .subtitulo__categorias{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .header__nav-item{
+        padding: 0.2rem;
+        font-size: small;
+    }
+
+    table{
+        margin: 1rem;
+    }
+
+    .titulo{
+        font-size: 3rem;
+
+    }
+
+    .subtitulo__categorias{
+        font-size: 2.5rem;
     }
 }
